@@ -96,7 +96,7 @@ const questions = [
         ]
    
     }, {
-        question: 'Woher kommt Nintendo',
+        question: 'Von welcher kommt Nintendo',
         answers: [
             { text: 'Tokio',correct: false},
             { text:'Osaka',correct: false},
