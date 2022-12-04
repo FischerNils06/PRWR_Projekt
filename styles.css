@@ -93,8 +93,14 @@ body {
     float: left;
 }
 
-.line {
-    font-size: larger;
+td {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+th {
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 
