@@ -79,7 +79,23 @@ body {
     overflow-y: scroll;
 }
 
+#table {
+    width: 91.8vw;
+    float: right;
+    position: relative;
+}
 
+#line {
+    width: 4vw;
+    border-right: 4px;
+    border-right-style: solid;
+    border-right-color: #000000;
+    float: left;
+}
+
+.line {
+    font-size: larger;
+}
 
 
 #footer {
@@ -188,8 +204,7 @@ object {
     text-align: center;
     border-radius: 16px;
     background-color: red;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: 3px;
     clear: both;
     height: 37px;
     width: 188px;
@@ -227,6 +242,10 @@ object {
 
 .rest {
     clear: both;
+}
+
+li {
+    list-style-type: none;
 }
 
 *,
@@ -280,6 +299,8 @@ body.wrong {
     padding-bottom: 30px;
     box-shadow: 0 0 10px 2px;
     font-size: 28px;
+    clear: both;
+    position: absolute;
 }
 
 .btn2 {
@@ -289,7 +310,7 @@ body.wrong {
     background-color: hsl(var(--hue), 100%, 80%);
     color: black;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 16px;
     outline: none;
 
 
@@ -309,12 +330,12 @@ body.wrong {
 
 }
 
-.btn.correct {
+.btn2.correct {
     color: black;
     --hue: var(--hue-correct)
 }
 
-.btn.wrong {
+.btn2.wrong {
     color: black;
     --hue: var(--hue-wrong)
 }
@@ -325,7 +346,7 @@ body.wrong {
     background-color: hsl(var(--hue), 100%, 80%);
     color: black;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 16px;
     outline: none;
 }
 
@@ -334,20 +355,6 @@ body.wrong {
     color: hsl(var(--hue), 100%, 80%);
 }
 
-.next-btn {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: hsl(var(--hue), 100%, 80%);
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    outline: none;
-}
-
-.next-btn:hover {
-    background-color: black;
-    color: hsl(var(--hue), 100%, 80%);
-}
 
 .controlesquiz {
     display: flex;
@@ -358,3 +365,71 @@ body.wrong {
 .hide {
     display: none;
 }
+
+/* #quizdown in the middle of the page on the bottom */
+
+#quizdown {
+    height: 9.25vh;
+    width: 97.8vw;
+    clear: both;
+    position: relative;
+    margin-top: 70vh;
+}
+
+#score {
+    height: 9.25vh;
+    width: 97.8vw;
+    position: absolute;
+    margin-bottom: 70vh;
+    clear: both;
+}
+
+
+
+.btn4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #000000;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    clear: both;
+    height: 37px;
+    width: 90vw;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    overflow: hidden;
+}
+
+.btn4:hover {
+    background-color: #FFFFFF;
+    color: red;
+}
+
+.btn5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #000000;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    clear: both;
+    height: 37px;
+    width: 188px;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.btn5:hover {
+    background-color: #FFFFFF;
+    color: red;
+}
+
+
+
