@@ -28,6 +28,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
 questionElement.innerText = question.question
+shuffle(question.answers)
 question.answers.forEach(answer =>{
     const button = document.createElement('button')
     button.innerText = answer.text
@@ -113,7 +114,6 @@ const questions = [
             { text: 'Dort wo die Sonne aufgeht',correct:false}
 
         ]
-   
     }, {
         question: 'Von welcher Stadt kommt Nintendo',
         answers: [
@@ -123,24 +123,108 @@ const questions = [
             { text: 'Nagoya',correct:false}
         ]
     }, {
-        question: 'Wie viele Mitarbeiter hat Nintendo?',
+        question: 'Welche dieser Konsolen hat sich am schlechtesten verkauft?',
         answers: [
-            { text: '1000',correct: false},
-            { text:'2000',correct: false},
-            { text: '3000',correct: false},
-            { text: '4000',correct:true}
+            { text: 'Gamecube',correct: false},
+            { text:'Virtual Boy',correct: true},
+            { text: 'Wii U',correct: false},
+            { text: 'Switch',correct:false}
         ]
     }, {
-        question: 'Wie viele Spiele hat Nintendo entwickelt?',
+        question: 'Welche dieser Konsolen hat sich am besten verkauft?',
         answers: [
-            { text: '100',correct: false},
-            { text:'200',correct: false},
-            { text: '300',correct: true},
-            { text: '400',correct:false}
+            { text: 'Wii',correct: false},
+            { text:'DS',correct: true},
+            { text: '3DS',correct: false},
+            { text: 'Gameboy',correct:false}
+        ]
+    }, {
+        question: 'Wer hat das Patent für die "Motion Steuerung" der Nintendo Wii original Angelegt?',
+        answers: [
+            { text: 'Tom Quinn',correct: true},
+            { text:'Shigeru Miamoto ',correct: false},
+            { text: 'Scott Daniel Wozniak',correct: false},
+            { text: 'Reggie Fils-Aimé',correct:false}
+        ]
+    }, {
+        question: 'Welche Firma war Nintendos grösster Konkurent, als sie die SNES rausbrachten?',
+        answers: [
+            { text: 'Microsoft',correct: false},
+            { text:'Sony',correct: false},
+            { text: 'Sega',correct: true},
+            { text: 'Atari',correct:false}
+        ]
+    }, {
+        question: 'Wie viele Spiele gibt es für den Virtual Boy?',
+        answers: [
+            { text: '22',correct: true},
+            { text:'73',correct: false},
+            { text: '252',correct: false},
+            { text: 'ca. 500',correct:false}
+        ]
+
+    }, {
+        question: 'Wie hies der NES in Japan?',
+        answers: [
+            { text: 'Nintendo Game System',correct: false},
+            { text:'Totenoshi',correct: false},
+            { text: 'FamiCom',correct: true},
+            { text: 'GameTime',correct:false}
+        ]
+    }, {
+        question: 'Wofür steht DS?',
+        answers: [
+            { text: 'Dry Salad',correct: false},
+            { text:'Digital System',correct: false},
+            { text: 'Dual Shock',correct: false},
+            { text: 'Double Screen',correct:true}
+
+        ]
+    }, {
+        question: 'Wie viele 3DS Versionen gibt es?',
+        answers: [
+            { text: '1',correct: false},
+            { text:'3',correct: false},
+            { text: '6',correct: true},
+            { text: '8',correct:false}
+        ]
+    }, {
+        question: 'Als was wurde der NES in den USA vermarktet?',
+        answers: [
+            { text: 'Heimkonsole',correct: false},
+            { text:'Computer',correct: false},
+            { text: 'Spielzeug',correct: true},
+            { text: 'Dekoration',correct:false}
+        ]
+    }, {
+        question: 'Wer hat Nintendo in richtung Videospiele Gesteuert?',
+        answers: [
+            { text: 'Gunpei Yokoi',correct: true},
+            { text:'Shigeru Miamoto',correct: false},
+            { text: 'Reggie Fils-Aimé',correct: false},
+            { text: 'Satoru Iwata',correct:false}
+    
         ]
     }
 
-
- 
-  
 ];
+
+
+
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+   
+    while (currentIndex != 0) {
+  
+      
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+     
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
