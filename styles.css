@@ -3,12 +3,15 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    
+
 }
 
 body {
     background-color: red;
     clear: both;
     overflow: hidden;
+    scrollbar-gutter: none;
 
 }
 
@@ -177,25 +180,84 @@ ul {
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
+    
 
-
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 .content {
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     text-align: left;
-    margin: 11px;
-    font-size: 18px;  
+    margin: 4px;
+    font-size: 18px;
+    
+    
 }
 .content2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
     text-align: left;
-    margin: 11px;
-    font-size: 18px;  
+    font-size: 18px;
+    margin: 4px;
     font-weight: bold;
+    
 }
+
+img {
+    max-width: 100%;
+    max-height: 24vh;
+    margin-top: 14px;
+    clear: both;
+}
+
+.imgw {
+    max-width: 80vw;
+    max-height: 50vh;
+    margin-top: 14px;
+    clear: both;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.img_content {
+    width: 19vw;
+    float: right; 
+    margin: 11px;
+    margin-top: 9.25vh;
+    overflow-wrap: break-word;
+   
+}
+
+.text {
+    width: 57vw;
+    float: left;
+    margin: 11px;
+}
+.text2 {
+    text-align: left;
+    margin: 11px;
+    margin-top: 10.25vh;
+}
+@media (max-width: 1000px) {
+    .img_content {
+        width: 80vw;
+        float: right; 
+        margin: 11px;
+        margin-top: 9.25vh;
+    }
+    .text {
+        width: 80vw;
+        float: right; 
+        margin: 11px;
+        margin-top: 9.25vh;
+    }
+}
+
+
+
 
 #nav {
     height: 66.9vh;
@@ -501,6 +563,31 @@ body.wrong {
     background-color: #FFFFFF;
     color: red;
 }
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+
+     background-color: red;
+     color: #000;
+     }
+
+
+
+audio {
+    margin-top: 11px;
+    margin-right: 11px;
+    float: right;
+
+    border-radius: 16px;
+    overflow: hidden;
+    
+
+}
+
+
+
+
+
 
 
 
