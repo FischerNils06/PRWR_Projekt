@@ -111,6 +111,12 @@ a.link {
     float: left;
 }
 
+@media (max-width: 1000px) {
+    #line {
+        display: none;
+    }
+}
+
 #table {
     float: right;
     width: 92vw;
@@ -280,6 +286,7 @@ img {
     border-style: solid;
     border-color: #000000;
     background-color: #FFFFFF;
+   
 
 
 }
@@ -288,8 +295,21 @@ img {
     width: 165px;
     position: absolute;
     z-index: 1;
-
 }
+
+.bttn {
+   
+    display: none;
+}
+
+.nav-active {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
 
 #bonus {
     border: 1px;
@@ -670,9 +690,7 @@ audio {
     background-color: red;
   
     width: 100vw;
-    width: 33.3333vw;
-    width: 33.3333vw;
-    width: 33.3333vw;
+    
     color: white;
        
 }
@@ -683,6 +701,31 @@ audio {
     }
 }
     
+.bar2 {
+    position: absolute;
+    margin-right: 2.4vh;
+    text-align: center;
+
+    
+}
+
+.t1 {
+    margin-top: 10vh;
+}
+
+.page {
+    /* place page on the bottom of main */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 10vh;
+    padding: 10vw;
+    overflow: hidden;
+
+   
+}
+
 
 
 
