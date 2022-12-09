@@ -327,26 +327,6 @@ object {
     color: red;
 }
 
-.btn3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-    border-radius: 16px;
-    background-color: red;
-    margin: 3px;
-    clear: both;
-    height: 37px;
-    width: 188px;
-    border: 1px;
-    border-style: solid;
-    border-color: #000000;
-}
-
-.btn3:hover {
-    background-color: #FFFFFF;
-    color: red;
-}
 
 .hand {
     float: left;
@@ -585,7 +565,92 @@ audio {
 }
 
 
+.btn6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    clear: both;
+    height: 37px;
+    width: 90vw;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+    overflow: hidden;
+}
 
+.btn6:hover {
+    background-color: red;
+    color: #FFFFFF;
+}
+
+.btn3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 16px;
+    background-color: red;
+    margin: 3px;
+    clear: both;
+    height: 37px;
+    width: 188px;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.btn3:hover {
+    background-color: #FFFFFF;
+    color: red;
+}
+
+
+.btn33 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #99ddff;
+    margin: 3px;
+    clear: both;
+    height: 37px;
+    width: 188px;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.btn33:hover {
+    background-color:black;
+    color: #99ddff;
+}
+
+.btn31 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    margin: 3px;
+    clear: both;
+    height: 37px;
+    width: 188px;
+    border: 1px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.btn31:hover {
+    background-color: red;
+    color: #FFFFFF
+}
 
 
 
